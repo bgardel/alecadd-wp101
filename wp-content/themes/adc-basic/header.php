@@ -34,7 +34,7 @@
                     			</button>
                     			<a class="navbar-brand" href="/">Project name</a>
                     		</div>
-                    		<div id="navbar" class="navbar-collapse collapse">
+                    		<div id="navbar" class="navbar-collapse navbar-right collapse">
                                 <?php bootstrap_nav(); ?>
                     		</div><!--/.nav-collapse -->
                     	</div><!--/.container-fluid -->
