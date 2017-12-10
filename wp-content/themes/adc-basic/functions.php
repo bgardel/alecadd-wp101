@@ -7,14 +7,14 @@
 
 // The CSS files for your theme
 function theme_styles() {
-    wp_enqueue_style('bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', array(), '', 'all');
-    wp_enqueue_style('bootstrap-theme', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css', array('bootstrap-css'), '', 'all');
-    wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/basic.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', array(), '', 'all');
+    wp_enqueue_style('bootstrap-theme', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', array('bootstrap-css'), '', 'all');
+    wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/basic.css', array(), '1.0.2', 'all');
 }
 
 // The JavaScript files for your theme
 function theme_js() {
-    wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', array('jquery'), '', true );
+    wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '', true );
     wp_enqueue_script('customjs', get_template_directory_uri() . '/js/basic.js', array(), '1.0.0', true);
 }
 
