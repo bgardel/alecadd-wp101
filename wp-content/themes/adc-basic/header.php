@@ -38,12 +38,12 @@
                                 <?php bootstrap_nav(); ?>
                     		</div><!--/.nav-collapse -->
                     	</div><!--/.container-fluid -->
-                    </nav>
+                    </nav><!--/.navbar -->
 
 
                 </div>
 
-            </div> <!-- .row -->
+            </div> <!--/.row -->
         
         
         <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
