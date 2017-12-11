@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
     <head>
-        <meta charset="utf-8">
-        <title></title>
+        <meta charset="<?php bloginfo('charset'); ?>">
+        <title><?php wp_title(''); ?> | <?php bloginfo('name'); ?></title>
+        <meta name="description" content="<?php bloginfo('description'); ?>" />
         <?php wp_head(); ?>
     </head>
     
@@ -23,7 +24,7 @@
 				<div class="col-xs-12">
 					        
             
-                    <nav class="navbar navbar-default">
+                    <nav class="navbar navbar-default navbar-fixed-top">
                     	<div class="container-fluid">
                     		<div class="navbar-header">
                     			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -35,7 +36,13 @@
                     			<a class="navbar-brand" href="/">Project name</a>
                     		</div>
                     		<div id="navbar" class="navbar-collapse navbar-right collapse">
-                                <?php bootstrap_nav(); ?>
+                                <?php //bootstrap_nav();
+                                wp_nav_menu(array(
+                                    'theme_location' => 'primary',
+                                    'container' => false,
+                                    'menu_class' => 'nav navbar-nav navbar-right',
+                                    'walker' => new Walker_Nav_Primary()
+                                )); ?>
                     		</div><!--/.nav-collapse -->
                     	</div><!--/.container-fluid -->
                     </nav><!--/.navbar -->
